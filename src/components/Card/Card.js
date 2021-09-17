@@ -10,15 +10,15 @@ export default function Card({ item }) {
             <div className="col2">
                 <div className="tituloNombre">
                     <h2>{item.name}</h2>
-                    <p></p>
+                    <p>{item.status}-{item.species}</p>
                 </div>
                 <div className="ultimaLocacion">
-                    <h3></h3>
-                    <p></p>
+                    <h3>Ultima locación conocida</h3>
+                    <p>(ultima locación)</p>
                 </div>
                 <div className="primeraVezVisto">
-                    <h3></h3>
-                    <p></p>
+                    <h3>Visto por primera vez</h3>
+                    <p>(primera vez)</p>
                 </div>
             </div>
         </div>

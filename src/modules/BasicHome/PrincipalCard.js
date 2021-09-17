@@ -10,16 +10,6 @@ export default function PrincipalCard() {
   let [valueToSearch, setValueToSearch] = useState('Rick Sanchez');
   let [urlGetCharacterBy, setUrlGetCharacterBy] = useState('https://rickandmortyapi.com/api/character/?name=');
 
-  useEffect(() => {
-    if (searchType === true) {
-      setValueToSearch = GetRandomNumber()
-      setUrlGetCharacterBy = 'https://rickandmortyapi.com/api/character/'
-      console.log(setValueToSearch,setUrlGetCharacterBy)
-    }
-  },[setUrlGetCharacterBy,setValueToSearch])
-  
-
-
   console.log(urlGetCharacterBy);
 
   useEffect(() => {
@@ -50,7 +40,6 @@ export default function PrincipalCard() {
         <Card item={item} key={index} />
       ))}
     </section>
-    <Boton onClick={(event) => setSearchType(true)}/>
   </div>
   );
 }
