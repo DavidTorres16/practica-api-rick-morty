@@ -1,8 +1,11 @@
+import axios from 'axios'
 import React from 'react'
 
 export default function Card({ item }) {
     
+    
     return (
+        
         <div>
             <div className="col1">
                 <img src={item.image} alt=""></img>
@@ -13,6 +16,10 @@ export default function Card({ item }) {
                     <p>{item.status}-{item.species}</p>
                 </div>
                 <div className="ultimaLocacion">
+                    <h3> Ultima Locacion </h3>
+                    <p>{item.location.name}</p>
+                </div>
+                <div className="origen">
                     <h3>Origen </h3>
                     <p>{item.origin.name}</p>
                 </div>

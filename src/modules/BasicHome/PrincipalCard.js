@@ -10,7 +10,7 @@ export default function PrincipalCard() {
   let [valueToSearch, setValueToSearch] = useState('Rick Sanchez');
   let [urlGetCharacterBy, setUrlGetCharacterBy] = useState('https://rickandmortyapi.com/api/character/?name=');
 
-  console.log(urlGetCharacterBy);
+ 
 
   useEffect(() => {
     getData(`${urlGetCharacterBy}${valueToSearch}`, setAllData);
