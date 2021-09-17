@@ -17,7 +17,7 @@ export default function Card({ item }) {
                     <p>{item.origin.name}</p>
                 </div>
                 <div className="primeraVezVisto">
-                    <h3>Creado</h3>
+                    <h3>Fecha de Creación</h3>
                     <p>{item.created}</p>
                 </div>
             </div>
