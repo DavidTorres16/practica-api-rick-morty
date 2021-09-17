@@ -6,26 +6,26 @@ export default function Card({ item }) {
     
     return (
         
-        <div>
-            <div className="col1">
-                <img src={item.image} alt=""></img>
+        <div className="d-flex mx-2 flex-row border border-light bg-dark shadow p-3 mb-5 rounded">
+            <div className="d-flex">
+                <img className="" src={item.image} alt=""></img>
             </div>
-            <div className="col2">
-                <div className="tituloNombre">
-                    <h2>{item.name}</h2>
-                    <p>{item.status}-{item.species}</p>
+            <div className="d-flex flex-column ms-2 me-1 bg-secondary p-3 rounded">
+                <div className="d-flex flex-column">
+                    <h2 className="text-light">{item.name}</h2>
+                    <p className="text-light">{item.status}-{item.species}</p>
                 </div>
-                <div className="ultimaLocacion">
-                    <h3> Ultima Locacion </h3>
-                    <p>{item.location.name}</p>
+                <div className="d-flex flex-column">
+                    <h3 className="text-light"> Ultima Locacion </h3>
+                    <p className="text-light">{item.location.name}</p>
                 </div>
-                <div className="origen">
-                    <h3>Origen </h3>
-                    <p>{item.origin.name}</p>
+                <div className="d-flex flex-column">
+                    <h3 className="text-light">Origen </h3>
+                    <p className="text-light">{item.origin.name}</p>
                 </div>
-                <div className="primeraVezVisto">
-                    <h3>Fecha de Creación</h3>
-                    <p>{item.created}</p>
+                <div className="d-flex flex-column justify-content-start">
+                    <h3 className="text-light">Fecha de Creación</h3>
+                    <p className="text-light">{item.created}</p>
                 </div>
             </div>
         </div>

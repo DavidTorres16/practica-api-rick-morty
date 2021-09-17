@@ -28,14 +28,15 @@ export default function PrincipalCard() {
 
   return (
     <div className="">
-    <section className="">
+    <section className="d-flex flex-column pt-4 justify-content-center align-items-center">
+      <h1 className="text-light">Api Rick And Morthy</h1>
       <input
-        className=""
+        className="my-3 fs-5 w-50 rounded-pill border-0 p-2 ps-4"
         placeholder="Buscar..."
         onChange={(event) => setValueToSearch(event.target.value)}
       ></input>
     </section>
-    <section className="">
+    <section className="d-flex flex-wrap justify-content-center align-items-center">
       {results?.map((item, index) => (
         <Card item={item} key={index} />
       ))}
