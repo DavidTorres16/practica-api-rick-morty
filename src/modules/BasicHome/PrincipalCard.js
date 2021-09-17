@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { getData } from '../../api/AsyncHttpRequest';
+import { getData } from '../../Api/AsyncHttpRequest';
 import Boton from '../../components/Boton/Boton';
 import Card from '../../components/Card/Card';
 

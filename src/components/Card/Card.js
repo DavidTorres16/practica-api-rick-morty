@@ -13,12 +13,12 @@ export default function Card({ item }) {
                     <p>{item.status}-{item.species}</p>
                 </div>
                 <div className="ultimaLocacion">
-                    <h3>Ultima locación conocida</h3>
-                    <p>(ultima locación)</p>
+                    <h3>Origen </h3>
+                    <p>{item.origin.name}</p>
                 </div>
                 <div className="primeraVezVisto">
-                    <h3>Visto por primera vez</h3>
-                    <p>(primera vez)</p>
+                    <h3>Creado</h3>
+                    <p>{item.created}</p>
                 </div>
             </div>
         </div>
